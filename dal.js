@@ -1,5 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
-const url = 'https://bankofpnw-api.onrender.com';
+const url = 'https://bankofthepnw-api.onrender.com';
 let db
 
 // connect to mongo
