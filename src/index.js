@@ -4,6 +4,9 @@ var cors    = require('cors');
 var dal     = require('./dal.js');
 var disbleDev = require('@fvilers/disable-react-devtools');
 const e = require('express');
+const ejs = require('ejs');
+
+app.set('view engine', 'ejs');
 
 // used to serve static files from public directory
 app.use(express.static('public'));
