@@ -4,7 +4,7 @@ const uri = "mongodb+srv://kristenkenny:cluster1234@cluster0.smfgylg.mongodb.net
 let db = null;
 
 // connect to mongo
-MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
+MongoClient.connect(uri, { useUnifiedTopology: true }, function (err, client) {
     console.log("Connected successfully to db server");
 
     // connect to myproject database
