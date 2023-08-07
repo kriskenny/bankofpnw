@@ -1,27 +1,6 @@
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyDwJKjd_5mpvRRfrOXsv-nGrj5G93nUkaA",
-  authDomain: "badbank-d93a3.firebaseapp.com",
-  projectId: "badbank-d93a3",
-  storageBucket: "badbank-d93a3.appspot.com",
-  messagingSenderId: "918690165865",
-  appId: "1:918690165865:web:f119965fb1c81bb3bd1ef8",
-  measurementId: "G-MEQJZPN17E"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://kristenmkenny:kamjam09@cluster0.fmdvlr5.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://kristenkenny:cluster1234@cluster0.smfgylg.mongodb.net/?retryWrites=true&w=majority";
+let db = null;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
