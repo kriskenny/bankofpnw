@@ -1,6 +1,7 @@
 const MongoClient = require('mongodb').MongoClient;
-const url = 'https://bankofthepnw-api.onrender.com';
-let db
+const uri = "mongodb+srv://kristenkenny:cluster1234@cluster0.smfgylg.mongodb.net/?retryWrites=true&w=majority";
+
+let db = null;
 
 // connect to mongo
 MongoClient.connect(url, { useUnifiedTopology: true }, function (err, client) {
